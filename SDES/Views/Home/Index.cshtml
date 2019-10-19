@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@using (Html.BeginForm("Archivo", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <h3>Clave</h3>
+    <input type="text" name="clave" />
+
+    <h3>Seleccionar Archivo</h3>
+    <input type="file" name="file" />
+
+    <input type="submit" value="Subir" class="btn btn-outline-success" />
+}
